@@ -5,21 +5,21 @@ const BASE_URL = "http://" + SERVER_IP + ":" + SERVER_PORT + "/text";
 function addText(event){
     event.preventDefault();
 
-    let Datatext =[{
+    let Datatext ={
         text: textInput.value,
-    }]
-    const NewUl = document.querySelector('ul');
-    if(NewUl !== null){
-        NewUl.remove();
     }
-    for (let mess of Datatext){
-        let newtext = document.createElement('li');
-        newtext.className = 'chats';
-        newtext.textContent = mess["text"].value;
-        NewUl.appendChild(newtext)
+    // const NewUl = document.querySelector('ul');
+    // if(NewUl !== null){
+    //     NewUl.remove();
+    // }
+    // for (let mess of Datatext){
+    //     let newtext = document.createElement('li');
+    //     newtext.className = 'chats';
+    //     newtext.textContent = mess["text"].value;
+    //     NewUl.appendChild(newtext)
 
 
-    }
+    
     axios.post(BASE_URL,Datatext)
 
 }
@@ -32,13 +32,11 @@ function loadText(){
 
 function displayText(res){
     let text = res.data;
-    let char = text.text
-    textMessage.textContent = char;
+    textMessage.textContent = text.text;
 
 
 
 }
-
 
 
 const sendText = document.querySelector('.send-btn');
