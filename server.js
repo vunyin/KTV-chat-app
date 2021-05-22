@@ -7,20 +7,19 @@ app.use(express.json());
 app.use(express.urlencoded());
 app.use(express.static('public'));
 
-app.get('/text',(req,res) =>res.send('Hello project'));
-let Message = {
-    text: "hello world",
-}
+let users=[
+    {username:'thy',message:'welcome!!'}
+];
 
+app.get('/text',(req,res)=>res.send(users));
 
-app.post('/text', (req, res)=>{
-    let text = req.body;
-    Message = text ;
-    res.send(text)
-    
-})
-
-app.get('/text', (req, res)=>{
-    res.send(Message)
-
+app.post('/text',(req,res)=>{
+    let userName = req.body.username;
+    let text = req.body.message;
+    let user={
+        username:userName,
+        message:text
+    }
+    users.push(user);
+    res.send(users)
 })
