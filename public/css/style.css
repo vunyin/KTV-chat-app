@@ -77,7 +77,6 @@ body {
     justify-content: flex-end;
 }
 span{
-    display: flex;
     justify-content: flex-end;
     margin: 0.5rem;
     padding: 0.5rem;
