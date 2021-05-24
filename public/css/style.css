@@ -68,10 +68,10 @@ body {
 
 .chats{
     height: 73vh;
-    padding: 10px 0;
+    padding: 5px 0;
     color: #fff;
     overflow-y: auto;
-    overflow-x: hidden; 
+    /* overflow-x: hidden;  */
 }
 .my-chat{
     justify-content: flex-end;
@@ -79,11 +79,12 @@ body {
 span{
     display: flex;
     justify-content: flex-end;
-    margin: 0.75rem;
+    margin: 0.5rem;
     padding: 0.5rem;
-    background-color: rgb(85, 82, 82);
+    background-color: rgb(51, 207, 155);
     border-radius: 25px;
     word-break: break-all;
+    font-weight: 100;
 }
 
 /* input section */

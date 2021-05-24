@@ -1,5 +1,7 @@
 const express = require('express');
 const app = express();
+const fs = require('fs');
+let dataUsers =(JSON.parse(fs.readFileSync('dataUsers.json')));
 
 app.listen(process.env.PORT || 5000, ()=>console.log('Server running ....'));
 
