@@ -7,10 +7,15 @@ app.use(express.json());
 app.use(express.urlencoded());
 app.use(express.static('public'));
 
-app.get('/text',(req,res) =>res.send('Hello project'));
+// app.get('/text',(req,res) =>res.send('Hello project'));
+
 let Message = {
     text: "hello world",
 }
+
+
+
+
 
 app.post('/text', (req, res)=>{
     let text = req.body;
