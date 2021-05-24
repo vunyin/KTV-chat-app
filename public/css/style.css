@@ -68,7 +68,7 @@ body {
 
 .chats{
     height: 73vh;
-    padding: 5px 0;
+    padding: 10px 0;
     color: #fff;
     overflow-y: auto;
     /* overflow-x: hidden;  */
@@ -77,7 +77,7 @@ body {
     justify-content: flex-end;
 }
 span{
-    justify-content: flex-end;
+
     margin: 0.5rem;
     padding: 0.5rem;
     background-color: rgb(51, 207, 155);
