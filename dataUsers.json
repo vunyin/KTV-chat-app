@@ -1,6 +1,1 @@
-[
-    {"username":"kunthy","password":"11111"},
-    {"username":"vun","password":"12345"},
-    {"username":"rady","password":"55555"},
-    {"username":"ronan","password":"33333"}
-]
+[{"username":"kunthy","password":"11111","color":"color-red"},{"username":"vun","password":"12345","color":"color-orange"},{"username":"rady","password":"55555","color":"color-pink"},{"username":"ronan","password":"33333","color":"color-green"}]
