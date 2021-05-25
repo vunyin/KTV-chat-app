@@ -1,6 +1,7 @@
-const SERVER_IP = "192.168.56.1";
-const SERVER_PORT = 5000;
-const BASE_URL = "http://" + SERVER_IP + ":" + SERVER_PORT ;
+// const SERVER_IP = "192.168.56.1";
+// const SERVER_PORT = 5000;
+// const BASE_URL = "http://" + SERVER_IP + ":" + SERVER_PORT ;
+const BASE_URL = "https://ktv-chat-app.herokuapp.com"
 
 
 let loginProcess=(response,username,pass)=>{
@@ -8,12 +9,13 @@ let loginProcess=(response,username,pass)=>{
     console.log(datausers)
     let isLogin = false;
     for(let user of datausers){
-        if(user.name === username && user.password===pass && !isLogin){
+        if(user.username == username && user.password==pass && !isLogin ){
             window.location.href = BASE_URL+'/chat.html';
             isLogin = true;
             localStorage.setItem('username',username);
             localStorage.setItem('password',pass);
             localStorage.setItem('color',user.color);
+            console.log(user);
         }
     }
     if(isLogin){
@@ -23,8 +25,6 @@ let loginProcess=(response,username,pass)=>{
     }
         
 }
-
-
 
 function login(event){
     let username = document.querySelector('#user').value;
