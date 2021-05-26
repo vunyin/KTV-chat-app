@@ -15,13 +15,6 @@ let users=[
     {username:'thy',message:'welcome!!',color:'color-default'}
 ];
 
-// let datausers = [
-//     {name:'kunthy',password:'123', color:'color-red'},
-//     {name:'vun',password:'123', color:'color-green'},
-//     {name:'rady',password:'123', color:'color-orange'},
-//     {name:'den',password:'den009', color:'color-pink'},
-    
-// ]
 
 // let icons = [
 //     {id: 1, icon: '😓', sign: '):'},
@@ -53,7 +46,7 @@ app.post('/text',(req,res)=>{
         message:text,
         color:color
     }
-    console.log(users)
+    console.log(user)
     users.push(user);
     res.send(users)
 })
