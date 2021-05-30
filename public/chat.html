@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project2</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <!-- chat box -->
+        <div class="chat-box">
+            <!-- client -->
+            <div class="client">
+                <div id="img"></div>
+                <div class="client-info">
+                    <h2></h2>
+                    <p>online</p>
+                </div>
+                <button class="sign-up">                      
+                    <img src="images/backicon.png" alt="sign-up">
+                </button>
+            </div>
+            <div class="time"></div>
+            <!-- main chat section -->
+            <div class="chats">
+                <div class="client-chat"></div>
+                <div class="my-chat"></div>
+                <div class="pro"></div>
+            </div>
+            <!-- sound -->
+            <audio class="myAudio">
+                <source src="./sound/sound.mp3" type="">
+            </audio>
+
+            <!-- input field section -->
+            <div class="chat-input">
+                <!-- <div class="font"> -->
+                    <button id="bold">B</button>
+                    <button id="italic">I</button>
+                <!-- </div> -->
+
+                <input type="text" id="text" placeholder="Enter Message" />
+               
+                <button class="send-btn">                      
+                    <img src="images/send.png" alt="send-btn">
+                </button>
+                
+            </div>
+        </div>
+        <!-- <div class="chat-btn">
+            <img src="images/Circle-icons-chat.svg.png" alt="chat box icon btn">
+        </div> -->
+    </div>
+</body>
+</html>
