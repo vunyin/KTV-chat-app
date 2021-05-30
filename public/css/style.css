@@ -7,13 +7,36 @@
     outline: none;
     border: none;
 }
-
+#bold,#italic{
+    font-weight: bolder;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(194, 190, 190);
+    margin: 3px;
+    text-align: center;
+    border-radius: 5px;
+    }
+#italic {
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    }
+.bold{
+    font-weight: bold;
+}
+.italic{
+    font-style: italic;
+}
+.active {
+    background: #000;
+    color:#fff;
+}
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #1e7e79;
+    background-image: url(../images/img.jpg);
 }
 
 .container {
@@ -26,12 +49,13 @@ body {
 /* chat box section */
 
 .chat-box {
-    width: 500px;
-    height: 450px;
-    background-color: #fff;
+    width: 450px;
+    height: 550px;
+    background-color:floralwhite;
     overflow: hidden;
     border-radius: 10px;
     position: relative;
+
 }
 
 
@@ -44,6 +68,15 @@ body {
     height: 80px;
     background-color: #77b3d4;
     padding: 15px;
+}
+.sign-up{
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    margin-left: 250px;
+
+
+
 }
 
 .client img {
@@ -65,12 +98,18 @@ body {
 
 
 /* chat section */
-
+.pro{
+    margin-left: 200px;
+}
 .chats{
     height: 73vh;
     padding: 10px 0;
     overflow-y: auto;
     /* overflow-x: hidden;  */
+}
+.client-chat{
+    padding: 15px;
+    width: 100%;
 }
 .my-chat{
     padding: 10px;
@@ -82,7 +121,7 @@ span{
     padding: 0.5rem;
    
     border-radius: 25px;
-    word-break: break-all;
+    /* word-break: break-all; */
     font-weight: 100;
 }
 .color-default{
@@ -102,11 +141,17 @@ span{
 }
 .left {
     text-align: left;
+
 }
 .right {
     text-align: right;
     display: flex;
     flex-direction: row-reverse;
+}
+.time{
+    background: rgb(216, 163, 163);
+
+
 }
 /* input section */
 
@@ -132,19 +177,19 @@ span{
 }
 
 .send-btn {
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 40px;
     background-color: transparent;
     overflow: hidden;
     position: relative;
     margin-left: 5px;
     cursor: pointer;
     transition: 0.4s ease-in-out;
-    margin-top: -30px;
+    /* margin-top: -10px; */
 }
 
 .send-btn:active {
-    transform: scale(1.85);
+    transform: scale(1.90);
 }
 
 .send-btn img {
